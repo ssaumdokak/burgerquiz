@@ -1,3 +1,47 @@
+Skip to content
+Navigation Menu
+notilttoday
+/
+WebAppDev
+
+Type / to search
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+Files
+Go to file
+t
+image
+libs
+bootstrap.min.css
+script
+script.js
+style
+style.css
+index.html
+links.js
+questions.js
+questions.json
+BreadcrumbsWebAppDev
+/index.html
+Latest commit
+author
+‘notilttoday’
+initial commit
+14b1dd2
+ · 
+3 hours ago
+History
+File metadata and controls
+
+Code
+
+Blame
+114 lines (102 loc) · 4.15 KB
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +65,7 @@
               <div class="logo-img"></div>
               <span class="logo-text h1">BURGER-QUIZ</span>
             </div>
-            <h1 class="contacts d-none d-md-block">GLO Academy</h1>
+            <h1 class="contacts d-none d-md-block">RPZ</h1>
           </div>
         </div>
       </div>
@@ -42,7 +86,7 @@
       <div class="row">
         <div class="col">
           <div class="d-flex flex-column align-items-center p-1 p-sm-2 p-md-3">
-            <h2 class="main-title text-center h1">Пройди тест і збери</h2>
+            <h2 class="main-title text-center h1">Пройди тестування та збери </h2>
             <h2 class="main-title text-center h1">бургер своєї мрії</h2>
           </div>
         </div>
@@ -60,7 +104,7 @@
         <div class="col">
           <div class="d-flex justify-content-center p-1 p-sm-2 p-md-3">
             <button type="button" class="btn btn-outline-danger" id="btnOpenModal">
-              <span class="btnText h1">Пройди тест і отримай результат</span>
+              <span class="btnText h1">Пройди тестування та отримай результат</span>
             </button>
           </div>
         </div>
@@ -73,7 +117,7 @@
     <div class="modal-dialog  modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Відповідай на питання:</h5>
+          <h5 class="modal-title">Дай відповідь на питання:</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeModal">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -82,20 +126,34 @@
           <h5 class="question p-1 p-sm-2 p-md-3 text-center" id="question"></h5>
           <div class="answers w-100 p-1 p-sm-2 p-md-3" id="answers">
             <form action="#" id="formAnswers" class="formAnswers d-flex flex-wrap justify-content-around">
-
+              <!-- <div class="answers-item d-flex flex-column">
+                <input type="radio" id="answerItem1" name="answer" class="d-none">
+                <label for="answerItem1" class="d-flex flex-column justify-content-between">
+                  <img class="answerImg" src="./image/burger.png" alt="burger">
+                  <span>Стандарт</span>
+                </label>
+              </div>
+              <div class="answers-item d-flex justify-content-center">
+                <input type="radio" id="answerItem2" name="answer" class="d-none">
+                <label for="answerItem2" class="d-flex flex-column justify-content-between">
+                  <img class="answerImg" src="./image/burgerBlack.png" alt="burger">
+                  <span>Чорний</span>
+                </label>
+              </div> -->
             </form>
           </div>
         </div>
         <div class="modal-footer" id="modalFooter">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" id="prev">Попереднє</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" id="next">Наступне</button>
-          <button type="button" class="btn btn-primary sendBtn d-none" id="send">Надіслати</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" id="prev">Prev</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" id="next">Next</button>
+          <button type="button" class="btn btn-primary sendBtn d-none" id="send">Send</button>
         </div>
       </div>
     </div>
   </div>
 
-  <script type="module" src="./script/script.js"></script>
+  <script src="./script/script.js"></script>
 </body>
 
 </html>
+WebAppDev/index.html at main · notilttoday/WebAppDev
