@@ -1,95 +1,96 @@
 const questions = [
-  {
-    question: "Какого цвета бургер?",
-    answers: [
-      {
-        title: "Стандарт",
-        url: "./image/burger.png",
-      },
-      {
-        title: "Черный",
-        url: "./image/burgerBlack.png",
-      },
-    ],
-    type: "radio",
-  },
-  {
-    question: "Из какого мяса котлета?",
-    answers: [
-      {
-        title: "Курица",
-        url: "./image/chickenMeat.png",
-      },
-      {
-        title: "Говядина",
-        url: "./image/beefMeat.png",
-      },
-      {
-        title: "Свинина",
-        url: "./image/porkMeat.png",
-      },
-    ],
-    type: "radio",
-  },
-  {
-    question: "Дополнительные ингредиенты?",
-    answers: [
-      {
-        title: "Помидор",
-        url: "./image/tomato.png",
-      },
-      {
-        title: "Огурец",
-        url: "./image/cucumber.png",
-      },
-      {
-        title: "Салат",
-        url: "./image/salad.png",
-      },
-      {
-        title: "Лук",
-        url: "./image/onion.png",
-      },
-    ],
-    type: "checkbox",
-  },
-  {
-    question: "Добавить соус?",
-    answers: [
-      {
-        title: "Чесночный",
-        url: "./image/sauce1.png",
-      },
-      {
-        title: "Томатный",
-        url: "./image/sauce2.png",
-      },
-      {
-        title: "Горчичный",
-        url: "./image/sauce3.png",
-      },
-    ],
-    type: "radio",
-  },
+    {
+        question: "Якого кольору бургер?",
+        answers: [
+            {
+                title: 'Стандарт',
+                url: './image/burger.png'
+            },
+            {
+                title: 'Чорний',
+                url: './image/burgerBlack.png'
+            }
+        ],
+        type: 'radio'
+    },
+    {
+        question: "З якого м'яса котлета?",
+        answers: [
+            {
+                title: 'Курка',
+                url: './image/chickenMeat.png'
+            },
+            {
+                title: 'Яловичина',
+                url: './image/beefMeat.png'
+            },
+            {
+                title: 'Свинина',
+                url: './image/porkMeat.png'
+            }
+        ],
+        type: 'radio'
+    },
+    {
+        question: "Додаткові інгредієнти ?",
+        answers: [
+            {
+                title: 'Помідор',
+                url: './image/tomato.png'
+            },
+            {
+                title: 'Огірок',
+                url: './image/cucumber.png'
+            },
+            {
+                title: 'Салат',
+                url: './image/salad.png'
+            },
+            {
+                title: 'Цибуля',
+                url: './image/onion.png'
+            }
+        ],
+        type: 'checkbox'
+    },
+    {
+        question: "Додати соус?",
+        answers: [
+            {
+                title: 'Часниковий',
+                url: './image/sauce1.png'
+            },
+            {
+                title: 'Томатний',
+                url: './image/sauce2.png'
+            },
+            {
+                title: 'Гірчичний',
+                url: './image/sauce3.png'
+            }
+        ],
+        type: 'radio'
+    }
 ];
 
-const obj = {};
+const obj = {}
 
 const getData = () => {
-  formAnswers.textContent = "Loading...";
+    formAnswers.textContent = 'LOAD';
 
-  setTimeout(() => {
-    fetch("http://localhost:81/Quiz__intens/db.json")
-      .then((res) => res.json())
-      .then((obj) => playTest(obj.questions));
-  }, 2000);
-};
+    setTimeout(() => {
+        fetch('http://localhost:81/Quiz__intens/db.json')
+            .then(res => res.json())
+            .then(obj => playTest(obj.questions))
+    }, 2000);
+}
 
 const obj = {};
 
-const inputs = [...formAnswers.elements].filter((elem) => elem.checked);
+const inputs = [...formAnswers.elements]
+    .filter(elem => elem.checked)
 
 inputs.forEach((elem, index) => {
-  obj[`${index}_${questions[numberQuestion].question}`] = elem.value;
-});
-finalAnswers.push(obj);
+    obj[`${index}_${questions[numberQuestion].question}`] = elem.value;
+})
+finalAnswers.push(obj)
