@@ -1,28 +1,28 @@
 {
     "questions": [
         {
-            "question": "Какого цвета бургер?",
+            "question": "Якого кольору бургер?",
             "answers": [
                 {
                     "title": "Стандарт",
                     "url": "./image/burger.png"
                 },
                 {
-                    "title": "Черный",
+                    "title": "Чорний",
                     "url": "./image/burgerBlack.png"
                 }
             ],
             "type": "radio"
         },
         {
-            "question": "Из какого мяса котлета?",
+            "question": "З якого м'яса котлета?",
             "answers": [
                 {
-                    "title": "Курица",
+                    "title": "Курка",
                     "url": "./image/chickenMeat.png"
                 },
                 {
-                    "title": "Говядина",
+                    "title": "Яловичина",
                     "url": "./image/beefMeat.png"
                 },
                 {
@@ -33,14 +33,14 @@
             "type": "radio"
         },
         {
-            "question": "Дополнительные ингредиенты?",
+            "question": "Додаткові інгредієнти?",
             "answers": [
                 {
-                    "title": "Помидор",
+                    "title": "Помідор",
                     "url": "./image/tomato.png"
                 },
                 {
-                    "title": "Огурец",
+                    "title": "Огірок",
                     "url": "./image/cucumber.png"
                 },
                 {
@@ -48,25 +48,25 @@
                     "url": "./image/salad.png"
                 },
                 {
-                    "title": "Лук",
+                    "title": "Цибуля",
                     "url": "./image/onion.png"
                 }
             ],
             "type": "checkbox"
         },
         {
-            "question": "Добавить соус?",
+            "question": "Додати соус?",
             "answers": [
                 {
-                    "title": "Чесночный",
+                    "title": "Часниковий",
                     "url": "./image/sauce1.png"
                 },
                 {
-                    "title": "Томатный",
+                    "title": "Томатний",
                     "url": "./image/sauce2.png"
                 },
                 {
-                    "title": "Горчичный",
+                    "title": "Гірчичний",
                     "url": "./image/sauce3.png"
                 }
             ],
