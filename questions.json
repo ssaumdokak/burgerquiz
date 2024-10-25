@@ -18,7 +18,7 @@
             "question": "З якого м'яса котлета?",
             "answers": [
                 {
-                    "title": "Курка",
+                    "title": "Курятина",
                     "url": "./image/chickenMeat.png"
                 },
                 {
