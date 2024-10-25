@@ -1,4 +1,4 @@
-// ссылка openserver
+// посилання на openserver
 "https://ospanel.io"
-// ссылка на firebase
+// посилання на firebase
 "https://firebase.google.com/?hl=ru"
