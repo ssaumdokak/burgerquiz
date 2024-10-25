@@ -4,7 +4,7 @@
             "question": "Якого кольору бургер?",
             "answers": [
                 {
-                    "title": "Стандарт",
+                    "title": "Стандартний",
                     "url": "./image/burger.png"
                 },
                 {
@@ -15,10 +15,10 @@
             "type": "radio"
         },
         {
-            "question": "З якого м'яса котлета?",
+            "question": "З якого м’яса котлета?",
             "answers": [
                 {
-                    "title": "Курятина",
+                    "title": "Курка",
                     "url": "./image/chickenMeat.png"
                 },
                 {
