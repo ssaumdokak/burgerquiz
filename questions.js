@@ -3,7 +3,7 @@ const questions = [
         question: "Якого кольору бургер?",
         answers: [
             {
-                title: 'Стандартний',
+                title: 'Стандарт',
                 url: './image/burger.png'
             },
             {
@@ -14,7 +14,7 @@ const questions = [
         type: 'radio'
     },
     {
-        question: "З якого м’яса котлета?",
+        question: "З якого м'яса котлета?",
         answers: [
             {
                 title: 'Курка',
@@ -32,7 +32,7 @@ const questions = [
         type: 'radio'
     },
     {
-        question: "Додаткові інгредієнти?",
+        question: "Додаткові інгредієнти ?",
         answers: [
             {
                 title: 'Помідор',
@@ -73,25 +73,24 @@ const questions = [
     }
 ];
 
-// Змінна для зберігання відповідей користувача
-const finalAnswers = [];
+const obj = {}
 
-// Функція для отримання даних
 const getData = () => {
-    formAnswers.textContent = 'ЗАВАНТАЖЕННЯ...';
+    formAnswers.textContent = 'LOAD';
 
     setTimeout(() => {
         fetch('http://localhost:81/Quiz__intens/db.json')
             .then(res => res.json())
-            .then(data => playTest(data.questions)) // 'data' замість 'obj' для уникнення конфліктів
+            .then(obj => playTest(obj.questions))
     }, 2000);
 }
 
-// Обробка вибраних відповідей користувача
 const obj = {};
-const inputs = [...formAnswers.elements].filter(elem => elem.checked);
+
+const inputs = [...formAnswers.elements]
+    .filter(elem => elem.checked)
 
 inputs.forEach((elem, index) => {
     obj[`${index}_${questions[numberQuestion].question}`] = elem.value;
-});
-finalAnswers.push(obj);
+})
+finalAnswers.push(obj)
