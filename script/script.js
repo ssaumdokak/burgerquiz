@@ -1,20 +1,19 @@
- import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+import { getDatabase, ref, child, get, push } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js";
 
+const firebaseConfig = {
+  apiKey: "AIzaSyBjMORSbp5qhb3Rj1Zhb0KeCOp-Bt3uow0",
+  authDomain: "firstfirebaseproject-30e8e.firebaseapp.com",
+  projectId: "firstfirebaseproject-30e8e",
+  storageBucket: "firstfirebaseproject-30e8e.firebasestorage.app",
+  messagingSenderId: "778517894425",
+  appId: "1:778517894425:web:4616508a557b6c7bc3a188",
+  databaseURL: "https://firstfirebaseproject-30e8e-default-rtdb.europe-west1.firebasedatabase.app"
+};
 
-  const firebaseConfig = {
-    apiKey: "AIzaSyCzcpN86vJH0vHAu1OTF9TP_j_D8iGiCVo",
-    authDomain: "burgerquiz-4d48d.firebaseapp.com",
-    projectId: "burgerquiz-4d48d",
-    storageBucket: "burgerquiz-4d48d.firebasestorage.app",
-    messagingSenderId: "698383220400",
-    appId: "1:698383220400:web:98b54d66c17c3fc624c575",
-    databaseURL: "https://burgerquiz-4d48d-default-rtdb.firebaseio.com",
-  };
-
-
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
+// Firebase initialization
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
 
 const questionTitle = document.querySelector('#question');
 const prevBtn = document.querySelector('#prev');
