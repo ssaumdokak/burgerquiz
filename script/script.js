@@ -1,14 +1,14 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
-import { getDatabase, ref, child, get, push } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js";
+import { getDatabase, ref, child, get, push } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBjMORSbp5qhb3Rj1Zhb0KeCOp-Bt3uow0",
-  authDomain: "firstfirebaseproject-30e8e.firebaseapp.com",
-  projectId: "firstfirebaseproject-30e8e",
-  storageBucket: "firstfirebaseproject-30e8e.firebasestorage.app",
-  messagingSenderId: "778517894425",
-  appId: "1:778517894425:web:4616508a557b6c7bc3a188",
-  databaseURL: "https://firstfirebaseproject-30e8e-default-rtdb.europe-west1.firebasedatabase.app"
+  apiKey: "AIzaSyAai0ZT6lTkxUklqPoXcQ3QRBSaCVHykI0",
+  authDomain: "burger-ba3cc.firebaseapp.com",
+  projectId: "burger-ba3cc",
+  storageBucket: "burger-ba3cc.firebasestorage.app",
+  messagingSenderId: "265943574881",
+  appId: "1:265943574881:web:dcf40da2dafe76ec7e3d20",
+  databaseURL: "https://burger-ba3cc-default-rtdb.firebaseio.com"
 };
 
 // Firebase initialization
